@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Play:wght@400;700&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(233, 221, 4),rgb(213, 24, 55),purple,rgb(227, 124, 6),blue);
+    flex-direction: column;
+}
+
+.container
+{
+    width: 420px;
+    height:520px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    position: relative;
+    background-image: url(main-img.jpeg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.story-box
+{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 15px;
+    background-color: rgb(48, 47, 47);
+}
+
+.story-box::-webkit-scrollbar
+{
+    display: none;
+}
+
+.story
+{
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(rgb(233, 221, 4),rgb(213, 24, 55),purple,rgb(227, 124, 6),blue);
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 2px;
+}
+
+.story img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(233, 221, 4),rgb(213, 24, 55),purple,rgb(227, 124, 6),blue; 
+}
+
+.full
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav
+{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(48, 47, 47) ;
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 2%;
+    display: flex;
+}
+
+.logo h3
+{
+    font-size:1.7rem;
+    color: rgb(215, 68, 181);
+    font-family: "Billabong",cursive,sans-serif ;
+    font-weight: 100;
+}
+
+.ri-instagram-line
+{
+    color: rgb(215, 68, 181);
+    margin-top: 2%;
+    font-size: 30px;
+}
+
+.ri-arrow-down-s-line
+{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.ri-heart-3-fill
+{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-top: 3%;
+    cursor: pointer;
+    position: absolute;
+    left: 330px;
+    top: -10px;
+   
+   
+}
+
+.ri-messenger-fill
+{
+    font-size: 30px;
+    color: whitesmoke; 
+    margin-top: 3%;
+    cursor: pointer;
+    position: absolute;
+    left: 380px;
+    top: -10px;
+    
+}
+
+h2
+{
+    position: absolute;
+    bottom:250px;
+    left:25%;
+    color: black;
+    opacity: 0.7;
+}
+
+.like
+{
+    width: 420px;
+    height:70px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(48,47,47);
+    outline: none;
+    display: flex;
+    padding: 5px;
+   
+}
+
+.ri-heart-fill
+
+{
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.ri-chat-1-fill ,.ri-send-plane-fill
+{
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+p
+{
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight:540;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+#love
+{
+    position: absolute;
+    top:300px;
+    left:180px;
+    font-size:50px;
+    opacity: 0;
+    transition:0.3s linear;
+    animation: rotateFade 1s ease-in-out forwards;
+    animation: none;
+    
+}
+
+@keyframes rotateFade {
+
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+       
+    }
+
+    100%{
+        transform: rotate(45deg);
+        opacity: 1;
+        
+    }
+    
+}
+
+#cnt
+{
+    font-size: 1.5rem;
+    margin-left: -5%;
+    color: whitesmoke;
+}
